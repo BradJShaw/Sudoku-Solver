@@ -37,7 +37,7 @@ def openPuzzle():
     solvePuzzle["state"] = "disabled"
     resetButton["state"] = "disabled"
     
-    fileName = filedialog.askopenfilename(initialdir="/Users/Bradl/randos projos/sudoku solver", title = "Select Puzzle",
+    fileName = filedialog.askopenfilename(initialdir="/", title = "Select Puzzle",
                                           filetypes = (('Text Files', '.txt'), ('All Files', '*.*')))
 
     counter = 0
