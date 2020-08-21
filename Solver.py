@@ -74,9 +74,6 @@ def reset():
     for rows in numbers:
         for num in rows:
             num.set('')
-            
-def updateGrid():
-    sleep(.03)
     
 """ method to validate puzzle before solving """
 def validate():
@@ -156,7 +153,7 @@ def validate():
     if solvable:
         solve()
         
-    # lock all buttons
+    # unlock all buttons
     openFile["state"] = "normal"
     solvePuzzle["state"] = "normal"
     resetButton["state"] = "normal"
@@ -222,7 +219,7 @@ def possible(x, y):
 # puzzle for reset button
 resetPuzzle = []
 
-# Create gui
+# create gui
 root = tk.Tk()
 root.title("Sudoku Solver")
 root.resizable(False, False)
